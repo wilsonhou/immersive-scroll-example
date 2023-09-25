@@ -33,9 +33,7 @@ const HorizontalScrollBox = ({
         translateX,
       }}
       className="bg-white h-96 w-96 absolute top-0 left-0"
-    >
-      {position}
-    </motion.div>
+    ></motion.div>
   );
 };
 
@@ -58,7 +56,7 @@ export default function Home() {
         ref={targetRef}
         className="bg-red-500 py-10 relative h-[calc(12*96px*4)]"
       >
-        <div className="sticky h-96 top-[calc(50%-192px)] bg-green-500 translate-x-1/2">
+        <div className="sticky h-96 top-[calc(50%-192px)] translate-x-1/2">
           <div className="relative -translate-x-48">
             {new Array(10).fill(0).map((_, i) => (
               <HorizontalScrollBox
